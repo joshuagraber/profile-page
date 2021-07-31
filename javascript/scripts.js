@@ -174,7 +174,6 @@ form.addEventListener('change', (e) => {
 // Listener on button
 form.addEventListener('submit', (e) => {
   if (isEmailFormCorrect()) {  // Checks that fields are properly filled out, if so, shows user a success message
-      // e.preventDefault();
       setTimeout(fadeInOut(successMessage), 100); //fades success message in
       clearTimeout();
       setTimeout(function() {
