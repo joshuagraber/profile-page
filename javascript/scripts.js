@@ -69,6 +69,7 @@ function openModal(e) {
       overlay.classList.toggle('show');
       body.style.position = 'fixed';
       body.style.top = `-${scrollY}px`;
+      body.style.width = '100%';
     }
   })
 }
