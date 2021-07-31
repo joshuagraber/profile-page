@@ -1,0 +1,49 @@
+// ======================================
+//  Card Styles
+// ======================================
+
+// Cards
+.card header {
+    height: 45px;
+    padding: 2rem;
+    background: $color-primary;
+    color: $color-bg;
+    display: grid;
+    border-radius: 5px 5px 0 0;
+    align-content: center;
+    justify-content: center;
+}
+.card h4 {
+    text-decoration: underline solid $color-accent .1rem;
+    text-align: center;
+}
+.card {
+    width: auto;
+    border-radius: 5px;
+}
+.card.coffee {
+    @include mq(lg) {
+        grid-column: 1 / -1;
+    }
+}
+.card-img-wrap {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+}
+.card-img-overlay {
+    background: $color-accent-transp;
+    border-radius: 0 0 5px 5px;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    transform: translateY(100%);
+    transition: 0.3s ease-in;
+}
+.card-img-wrap:hover .card-img-overlay {
+    transform: translateY(0);
+}

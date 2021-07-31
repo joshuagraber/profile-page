@@ -1,0 +1,47 @@
+// ======================================
+//  Button Styles
+// ======================================
+
+// Card buttons
+.card-img-button {
+    padding: .5rem;
+    background: none;
+    background: $color-primary-transp;
+    border: 2px solid $color-bg;
+    color: $color-bg;
+    font-weight: 600;
+    cursor: pointer;
+}
+.card-img-button:hover {
+    box-shadow: inset 0 0 5px $color-shade;
+}
+.card-img-button:active {
+    transform: scale(.95);
+}
+
+// Modal buttons
+.mod-callout {
+    background: none;
+    border: 2px solid $color-primary;
+    border-radius: 3px;
+    box-shadow: inset 1 1 5px rgba($color-accent, $alpha: .6);
+    width: 140px;
+    height: 50px;
+    font-weight: 600;
+    & a {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+.mod-callout.live {
+    background:rgba($color-primary-light, $alpha: .8);
+    & a {
+        color: $white;
+    }
+    &:hover {
+        opacity: .9;
+    }
+}

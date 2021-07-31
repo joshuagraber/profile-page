@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Nunito:wght@200;400;600&display=swap" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/30b7ab83ca.js" crossorigin="anonymous"></script>
+  
+  <title> Joshua Graber || Frontend Web Developer </title>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <header class="page-header">
+      <div class="nav-container">
+        <nav class="main-nav">
+          <ul class="link-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="open-nav"><span>Open</span><span>Menu</span><i class="fas fa-chevron-down arrow"></i></div>
+      </div>
+      <h1 class="title">Joshua Graber</h1>
+      <p class="sub-title">Frontend web developer || Friendly collaborator</p>
+    </header>
+
+    <main>
+      <div class="main-wrap">
+        <div class="profile-img">
+          <img src="images/profile-photo.png" alt="Photo of me leaning on a café counter">
+        </div>
+
+<!-- About -->
+        <div class="about" id="about">
+          <h2>About Me</h2>
+          <p>I am a frontend web developer who is passionate about making the web a more beautiful place. I'm a lifelong learner and am continuing to add coding tools to my tool box as I go along. I'm proficient in JavaScript and Node.js, CSS and SCSS, HTML5, and working with advanced layout techniques. Currently, I'm diving into the wonderful world of learning React, and I'll have some projects showcasing that skill shortly. If you'd like to collaborate, <a href="#contact">send me an email</a>, and let's talk!</p>
+        </div>
+
+<!-- Projects -->
+        <div class="projects" id="projects">
+          <h3>Projects I've Built</h3>
+          <div class="gallery">
+            
+            <div class="card coffee">
+              <header class="card-header">
+                <h4>Multi-page Coffee Shop Site</h4>
+              </header>
+              <div class="card-img-wrap">
+                <img src="images/coffee-1.png" alt="Screenshot of main page of my multi-page feature project" class="card-img coffee-small">
+                <img src="images/coffee-1-desk.png" alt="Screenshot of main page of my multi-page feature project" class="card-img coffee-large">
+                <div class="card-img-overlay">
+                  <button class="card-img-button" id="coffee">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <header class="card-header">
+                <h4>Sunnyside Agency Landing Page</h4>
+              </header>
+              <div class="card-img-wrap">
+                <img src="images/sunnyside-1.png" alt="Screenshot of landing page for Sunnyside advertisement agency" class="card-img">
+                <div class="card-img-overlay">
+                  <button class="card-img-button" id="sunnyside">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <header class="card-header">
+                <h4>Mars Rover Photo Generator</h4>
+              </header>
+              <div class="card-img-wrap">
+                <img src="images/mars-1.png" alt="Screenshot of photo Mars Rover photo generator" class="card-img">
+                <div class="card-img-overlay">
+                  <button class="card-img-button" id="mars-rover">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <header class="card-header">
+                <h4>Interactive Pricing Component</h4>
+              </header>
+              <div class="card-img-wrap">
+                <img src="images/page-slider-1.png" alt="Screenshot of interactive pricing component" class="card-img">
+                <div class="card-img-overlay">
+                  <button class="card-img-button" id="pricing-slide">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <header class="card-header">
+                <h4>Four Card Feature Page</h4>
+              </header>
+              <div class="card-img-wrap">
+                <img src="images/four-card-1.png" alt="Screenshot of four-card feature page" class="card-img">
+                <div class="card-img-overlay">
+                  <button class="card-img-button" id="four-card">Read More</button>
+                </div>
+              </div>
+            </div>
+
+          
+          </div>
+        </div>
+
+<!-- Contact -->
+        <div class="contact" id="contact">
+          <h5>Get in Touch</h5>
+          <form class="contact-form" action="contact-form.php" method="POST" name="contact-form">
+              <div class="form-row name">
+                <label for="name">Your Name: </label>
+                <input type="text" size="19" name="name"><div class="status-icon"></div>
+                <div class="error-message"><span>This field is required</span></div>
+              </div>
+              <div class="form-row email">
+                <label for="email">Your Email: </label>
+                <input type="email" name="email"><div class="status-icon"></div>
+                <div class="error-message"><span>A valid email is required</span></div>
+              </div>
+              <div class="form-row message">
+                <div class="msg-container">
+                  <label for="message">What's good?</label> 
+                  <textarea name="message" placeholder="Write me a message here..."></textarea>
+                </div>
+              </div>
+              <div class="form-row submit">
+                <input class="form-submit" type="submit" value="Send">
+              </div>
+              <div class="success-message">
+                <h6>Thank you for getting in touch!</h6>
+                <p>I'll get back to you shortly.</p>
+              </div> 
+          </form> 
+          
+        </div>
+      </div>
+<!-- Footer -->
+        
+      
+      <footer>
+        <div class="footer-links">
+          <div>Built by Joshua Graber</div>
+          <ul>
+            <li><a href="https://www.github.com/joshuagraber" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/joshuadgraber/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+
+<!-- Modals -->
+
+  <!-- Coffee Shop site -->
+  <div class="mod" id="coffee">
+    <div class="close-mod">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="mod-wrap">
+      <h5>Multi-page Coffee Shop Site</h5>
+      <div class="mod-hero">
+      </div>
+      <div class="feature">
+        <div class="feature-wrap">
+          <p>A multi-page coffee shop website featuring two modal windows, two forms with client side validation, and a fully (frontend) functioning e-commerce page.</p>
+          <img class="feature-img" src="images/coffee-2.png" alt="Screenshot of coffee shop e-commerce site">
+        </div>
+      </div>
+      <div class="tech-used">
+        <div class="tech-wrap">
+          <h6>Technologies Used and Skills Demonstrated</h6>
+          <ol class="tech-list">
+            <li>Html 5 markup</li>
+            <li>SCSS, packaged to CSS, run through autoprefixer, and minified using Gulp</li>
+            <li>All behavior coded with vanilla JavaScript.</li>
+            <li>CSS Grid</li>
+            <li>CSS Flexbox</li>
+            <li>Two different modal windows, including the shopping cart and a café menu</li>
+            <li>Mapbox API integration and display.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="mod-gallery">
+        <img src="images/coffee-3.png" alt="screenshot of coffee shop e-commerce modal window showing cart">
+        <img src="images/coffee-4.png" alt="screenshot of coffee shop café page">
+        <img src="images/coffee-5.png" alt="screenshot of coffee shop pricing section on roastery page">
+        <img src="images/coffee-6.png" alt="screenshot of coffee shop mobile menu">
+        <img src="images/coffee-7.png" alt="screenshot of coffee shop modal window showing café daily menu">
+        <img src="images/coffee-8.png" alt="screenshot of coffee shop cart in active form-validation state">
+      </div>
+      <div class="button-wrap">
+        <button class="mod-callout github"><a href="https://github.com/joshuagraber/coffee-shop-multi-page" target="_blank">Project Repository</a></button>
+        <button class="mod-callout live"><a href="https://joshuagraber.github.io/coffee-shop-multi-page/" target="_blank">View Site</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sunnyside Agency -->
+  <div class="mod" id="sunnyside">
+    <div class="close-mod">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="mod-wrap">
+      <h5>Sunnyside Agency Landing Page</h5>
+      <div class="mod-hero">
+      </div>
+      <div class="feature">
+        <div class="feature-wrap">
+          <p>A creative agency landing page featuring responsive layout, CSS flexbox and grid, as well as a mobile menu with a touch of JavaScript.</p>
+          <img class="feature-img" src="images/sunnyside-2.png" alt="Screenshot of Sunnyside agency landing page">
+        </div>
+      </div>
+      <div class="tech-used">
+        <div class="tech-wrap">
+          <h6>Technologies Used and Skills Demonstrated</h6>
+          <ol class="tech-list">
+            <li>Html 5 markup</li>
+            <li>SCSS, packaged to CSS using npm Sass</li>
+            <li>Mobile menu behavior coded with vanilla JavaScript.</li>
+            <li>CSS Grid</li>
+            <li>CSS Flexbox</li>
+          </ol>
+        </div>
+      </div>
+      <div class="mod-gallery">
+        <img src="images/sunnyside-1.png" alt="screenshot of sunnyside agency landing page header">
+        <img src="images/sunnyside-2.png" alt="screenshot of sunnyside agency landing page content area">
+        <img src="images/sunnyside-3.png" alt="screenshot of sunnyside agency landing page testimonials section">
+        <img src="images/sunnyside-4.png" alt="screenshot of sunnyside agency landing page mobile menu">
+      </div>
+      <div class="button-wrap">
+        <button class="mod-callout github"><a href="https://github.com/joshuagraber/fem-agency-landing-page" target="_blank">Project Repository</a></button>
+        <button class="mod-callout live"><a href="https://joshuagraber.github.io/fem-agency-landing-page/" target="_blank">View Site</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mars Rover Photo Generator -->
+  <div class="mod" id="mars-rover">
+    <div class="close-mod">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="mod-wrap">
+      <h5>Mars Rover Photo Generator</h5>
+      <div class="mod-hero">
+      </div>
+      <div class="feature">
+        <div class="feature-wrap">
+          <p>A fun project using NASA's Mars Rover API and vanilla JavaScript to generate random photos from each rover on a random Martian Sol each time a user presses a button.</p>
+          <img class="feature-img" src="images/mars-2.png" alt="Screenshot of Mars rover photo generator">
+        </div>
+      </div>
+      <div class="tech-used">
+        <div class="tech-wrap">
+          <h6>Technologies Used and Skills Demonstrated</h6>
+          <ol class="tech-list">
+            <li>Html 5 markup</li>
+            <li>CSS</li>
+            <li>JavaScript fetch API.</li>
+            <li>working with external APIs</li>
+            <li>CSS Flexbox</li>
+          </ol>
+        </div>
+      </div>
+      <div class="mod-gallery">
+        <img src="images/mars-1.png" alt="Screenshot of Mars rover photo generator">
+        <img src="images/mars-2.png" alt="Screenshot of Mars rover photo generator">
+        <img src="images/mars-3.png" alt="Screenshot of Mars rover photo generator">
+        <img src="images/mars-4.png" alt="Screenshot of Mars rover photo generator">
+      </div>
+      <div class="button-wrap">
+        <button class="mod-callout github"><a href="https://github.com/joshuagraber/red-rover" target="_blank">Project Repository</a></button>
+        <button class="mod-callout live"><a href="https://joshuagraber.github.io/red-rover/" target="_blank">View Site</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sliding Pricing Component -->
+  <div class="mod" id="pricing-slide">
+    <div class="close-mod">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="mod-wrap">
+      <h5>Interactive Pricing Component</h5>
+      <div class="mod-hero">
+      </div>
+      <div class="feature">
+        <div class="feature-wrap">
+          <p>An interesting pricing component that was my first real JavaScript challenge that I completed on my own.</p>
+          <img class="feature-img" src="images/page-slider-2.png" alt="Screenshot of interactive pricing component">
+        </div>
+      </div>
+      <div class="tech-used">
+        <div class="tech-wrap">
+          <h6>Technologies Used and Skills Demonstrated</h6>
+          <ol class="tech-list">
+            <li>Html 5 markup</li>
+            <li>CSS</li>
+            <li>Functional JavaScript programming.</li>
+            <li>CSS Flexbox</li>
+          </ol>
+        </div>
+      </div>
+      <div class="mod-gallery">
+        <img src="images/page-slider-1.png" alt="Screenshot of interactive pricing component">
+        <img src="images/page-slider-4.png" alt="Screenshot of interactive pricing component">
+      </div>
+      <div class="button-wrap">
+        <button class="mod-callout github"><a href="https://github.com/joshuagraber/fem-interactive-pricing-component" target="_blank">Project Repository</a></button>
+        <button class="mod-callout live"><a href="https://joshuagraber.github.io/fem-interactive-pricing-component/" target="_blank">View Site</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Four Card Feature Site -->
+  <div class="mod" id="four-card">
+    <div class="close-mod">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="mod-wrap">
+      <h5>Four Card Feature Page</h5>
+      <div class="mod-hero">
+      </div>
+      <div class="feature">
+        <div class="feature-wrap">
+          <p>A features page laid out with CSS Grid.</p>
+          <img class="feature-img" src="images/four-card-2.png" alt="Screenshot of four-card feature page">
+        </div>
+      </div>
+      <div class="tech-used">
+        <div class="tech-wrap">
+          <h6>Technologies Used and Skills Demonstrated</h6>
+          <ol class="tech-list">
+            <li>Html 5 markup</li>
+            <li>CSS</li>
+            <li>CSS Grid</li>
+          </ol>
+        </div>
+      </div>
+      <div class="button-wrap">
+        <button class="mod-callout github"><a href="https://github.com/joshuagraber/fem-four-card-feature-section-master" target="_blank">Project Repository</a></button>
+        <button class="mod-callout live"><a href="https://joshuagraber.github.io/fem-four-card-feature-section-master/" target="_blank">View Site</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+  <script src="javascript/scripts.js"></script>
+</body>
+</html>

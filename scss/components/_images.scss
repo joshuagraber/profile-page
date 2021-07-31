@@ -1,0 +1,40 @@
+// ======================================
+//  Image Styles
+// ======================================
+
+// Global
+img {
+    width: 100%;
+    height: auto;
+}
+
+// Profile 
+.profile-img {
+    @include center(250px);
+    margin-top: -130px;
+}
+.profile-img img {
+    @include roundy($dim: 250px, $brdr: 3px solid $color-primary-light);
+    box-shadow: 2px 2px 5px $color-primary;
+}
+
+// Card
+.card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 5px 5px;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+.coffee-small {
+    display: block;
+    @include mq(lg){
+        display: none;
+    }
+}
+.coffee-large {
+    display: none;
+    @include mq(lg) {
+        display: block;
+    }
+}

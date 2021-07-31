@@ -1,0 +1,35 @@
+// ======================================
+//  Variables
+// ======================================
+
+// Colors
+$white: #fff;
+
+$color-primary: rgba(14, 7, 18, 1);
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-transp: rgba(14, 7, 18, .5);
+$color-secondary:  rgba(132, 100, 102, 1);
+$color-accent: rgba(173, 130, 115, 1);
+$color-accent-transp: rgba(173, 130, 115, .6);
+$color-shade: rgb(212, 208, 214);
+
+$color-text: rgb(6, 2, 8); 
+$color-bg: rgb(241, 239, 243);
+$color-bg-darker: darken($color-bg, 10%);
+
+// Fonts
+$font-stack-primary: 'Nobile', sans-serif; //400, 500, 700
+$font-stack-secondary: 'Nunito', sans-serif; //200, 400, 600
+
+// Layout
+$max-width: 1000px;
+$gutter: 10px;
+
+// Breakpoints
+$breakpoints: (  //Map (similar to objects in JS)
+    'xs': 550px,
+    'sm': 551px,
+    'med': 768px,
+    'lg': 885px,
+    'xl': 971px
+);

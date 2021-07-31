@@ -1,0 +1,126 @@
+// ======================================
+//  Modal Styles
+// ======================================
+
+// Layout
+.mod {
+    @include modal-initial;
+}
+.mod.show {
+    @include modal-show;
+}
+.mod.fadeIn {
+    opacity: .98;
+}
+.mod-wrap {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+// Text and headers
+.mod {
+    font-size: .9rem;
+}
+.mod h5,
+.mod h6 {
+    text-align: center;
+    padding: 1rem;
+}
+.mod h5 {
+    font-size: 1.5rem;
+    text-decoration: underline solid $color-accent .1rem;
+}
+.mod h6 {
+    font-size: 1.25rem;
+}
+
+//Hero images (changes for each project)
+.mod-hero {
+    height: 250px;
+    background: $color-primary-light top center / cover;
+    background-blend-mode: lighten;
+}
+#coffee .mod-hero {
+    background-image: url(../images/coffee-1-desk.png);
+}
+#sunnyside .mod-hero {
+    background-image: url(../images/sunnyside-1.png);
+}
+#mars-rover .mod-hero {
+    background-image: url(../images/mars-1.png);
+}
+#pricing-slide .mod-hero {
+    background-image: url(../images/page-slider-1.png);
+}
+#four-card .mod-hero {
+    background-image: url(../images/four-card-1.png);
+}
+
+// Features / Tech used sections
+.feature-wrap,
+.tech-used {
+    padding: 2rem 1rem 1rem;
+    width: 100%;
+}
+.feature-wrap,
+.tech-wrap {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.feature-img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto 0;
+}
+.tech-list {
+    list-style-type: disc;
+    padding: 1rem 2rem 1rem 4rem;
+}
+
+// Gallery
+.mod-gallery {
+    margin-top: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    gap: 10px;
+    justify-content: center;
+    & img {
+        border-radius: 5px;
+    }
+}
+
+// Button Div
+.button-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $color-bg;
+    padding: 1rem 2rem;
+    @include flexy($align: center, $just: center, $wrap: wrap);
+    gap: 20px;
+}
+
+//Overlay
+.overlay {
+    display: none;
+}
+.overlay.show {
+    display: block;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba($color: #000000, $alpha: .6)
+}

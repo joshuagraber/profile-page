@@ -1,0 +1,30 @@
+// ======================================
+//  Header Styles
+// ======================================
+
+.page-header {
+    height: 600px;
+    background: linear-gradient(180deg, $color-primary 35%,$color-primary-light 60%,lighten($color-primary-light, 10%),lighten($color-primary-light, 20%), $color-bg-darker, $color-bg);
+    @include flexy($dir: column);
+    @include mq(xs) {
+        height: 100vh;
+    }
+}
+.page-header > * {
+    color: $color-shade;
+}
+.title,
+.sub-title {
+    align-self: center;
+    text-align: center;
+    letter-spacing: .1rem;
+}
+.title {
+    font-size: 3rem;
+    padding: 0 2rem;
+    margin-top: 3rem;
+}
+.sub-title {
+    font-size: 2rem;
+    padding: 0 2rem;
+}

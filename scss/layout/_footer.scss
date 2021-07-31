@@ -1,0 +1,26 @@
+// ======================================
+//  Footer Styles
+// ======================================
+
+footer {
+    height: 150px;
+    width: 100%;
+    margin-top: 6rem;
+    background: $color-primary-light;
+    color: $color-bg;
+    font-size: 1.2rem;
+    @include flexy($align: center, $just: center, $dir: column);
+    gap: 20px;
+}
+.footer-links a {
+    color: $color-bg;
+    &:hover {
+        color: $color-bg-darker;
+    }
+}
+.footer-links ul {
+    @include flexy($just: center);
+    gap: 20px;
+    font-size: 2rem;
+    margin-top: 1rem;
+}

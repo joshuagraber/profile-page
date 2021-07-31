@@ -1,0 +1,198 @@
+// ======================================
+//  Layout Container Styles
+// ======================================
+
+// About
+.page-wrap {
+    width: 100%;
+    background: $color-bg;
+}
+.main-wrap,
+.about,
+.projects,
+.contact {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+.about {
+    padding: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    @include mq(sm) {
+        width: 70%;
+        max-width: 600px;
+    }
+}
+.about h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.about a {
+    text-decoration: underline dotted $color-accent;
+}
+
+// Projects
+.projects {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.projects h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem 0 2rem;
+}
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 400px));
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+// Contact
+.contact {
+    margin-top: 3rem;
+}
+.contact h5 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+.contact-form {
+    width: 80%;
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 2rem;
+    border: 2px solid $color-primary;
+    border-radius: 5px;
+    box-shadow: 0 0 5px $color-primary-light;
+    color: $color-primary;
+    font-size: .9rem;
+    font-weight: 800;
+    @include flexy($just: center, $align: center, $wrap: wrap);
+    gap: 20px;
+    position: relative;
+}
+.form-row {
+    @include flexy($align: center);
+    position: relative;
+}
+.form-row.name,
+.form-row.email {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+.form-row.message {
+    flex-basis: 80%;
+}
+.form-row.submit {
+    flex-basis: 80%;
+    @include flexy($just: center, $align: center);
+}
+.msg-container {
+    width: 100%;
+    @include flexy($just: center);
+}
+label {
+    font-size: .9rem;
+    font-weight: 700;
+}
+input,
+textarea {
+    background: none;
+    background: rgba($color-accent, $alpha: .3);
+    border-radius: 5px;
+}
+input {
+    height: 30px;
+    padding: .5rem;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 200px;
+    margin-left: .5rem;
+}
+textarea {
+    display: block;
+    width: 75%;
+    height: 100px;
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: .5rem;
+    padding: .3rem;
+    font-family: $font-stack-secondary;
+    font-size: .9rem;
+}
+.form-submit {
+    background: none;
+    background: $color-primary-light;
+    width: 85px;
+    height: 40px;
+    border: 2px solid $color-shade;
+    border-radius: 5px;
+    color: $white;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    &:hover {
+        opacity: .8;
+    }
+    &:active {
+        transform: scale(.95);
+    }
+}
+
+// Form Val Styles
+.error-message {
+    display: none;
+    color: rgb(161, 28, 28);
+    grid-column: 2 / 3;
+    justify-self: end;
+}
+.status-icon {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.form-row.error .status-icon {
+    color: rgb(161, 28, 28);
+}
+.form-row.error .error-message {
+    display: inline-block;
+}
+.form-row.success .status-icon {
+    color: rgb(2, 97, 2);
+}
+
+.success-message {
+    display: none;
+    opacity: 0;
+    transition: all .3s ease-in;
+    & h6 {
+        font-size: 1.5rem;
+        align-self: end;
+    }
+    & p {
+        font-size: 1.1rem;
+    }
+}
+.success-message.show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color-primary-light, $alpha: .8);
+    color: white;
+    display: grid;
+    grid-template-columns: 1;
+    justify-items: center;
+}
+.success-message.fadeIn {
+    opacity: 1;
+}
