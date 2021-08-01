@@ -8,6 +8,10 @@
 }
 .mod.show {
     @include modal-show;
+    @include mq(mob) {
+        width: 99vw;
+        height: 99vh;
+    }
 }
 .mod.fadeIn {
     opacity: .98;
@@ -88,6 +92,7 @@
 // Gallery
 .mod-gallery {
     margin-top: 2rem;
+    padding-bottom: 7rem;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
@@ -95,6 +100,9 @@
     justify-content: center;
     & img {
         border-radius: 5px;
+    }
+    @include mq(mob) {
+        padding-bottom: 9rem;
     }
 }
 

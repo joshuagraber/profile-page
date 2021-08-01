@@ -24,7 +24,7 @@ const nameInput = document.querySelector('input[name="name"]');
 const emailInput = document.querySelector('input[type="email"]');
 
 const mailButton = document.querySelector('input[type="submit"]')
-const successMessage = document.querySelector('.success-message');
+const statusMessage = document.querySelector('.form-status-message');
 
 
 // Fade element in/out
@@ -53,10 +53,12 @@ function menuHandler() {
         nav.classList.toggle('show');
         openNav.innerHTML = '<span>Open</span><span>Menu</span><i class="fas fa-chevron-down arrow"></i>';
         openNav.style.transform = 'rotate(270deg)';
+        openNav.style.marginTop = '';
     } else {
         nav.classList.toggle('show');
         openNav.innerHTML = '<span>Close</span><span>Menu</span><i class="fas fa-chevron-down arrow"></i>';
         openNav.style.transform = 'rotate(90deg)';
+        openNav.style.marginTop = '1.5rem';
     }
 }
 // Modals 
@@ -141,6 +143,44 @@ function isEmailFormCorrect() {
 }
 
 
+//Form AJAX
+function ajaxPOST() {
+  var formData = $(form).serialize();
+  $.ajax( {
+    type: 'POST',
+    url: $(form).attr('action'),
+    data: formData
+  })
+  .done((response) => {
+    console.log(response);
+    statusMessage.innerHTML = response;
+    displayFormStatus();
+  })
+  .fail((data) => {
+    console.log(data);
+    if (data.responseText !== '') {
+      statusMessage.innerHTML = `${data.responseText}`;
+    } else {
+        statusMessage.innerHTML = '<h6>Oops! An error occured!</h6> <p>Your message could not be sent. Please try again.</p>';
+    }
+    displayFormStatus();
+  })
+}
+
+// Display status message 
+function displayFormStatus() {
+  setTimeout(fadeInOut(statusMessage), 100); //fades status message in
+  clearTimeout();
+  setTimeout(function() {
+    fadeInOut(statusMessage); // fades status message out
+    form.reset(); // resets form
+    emailDiv.classList.remove('success'); // removes validation styling & icons
+    nameDiv.classList.remove('success');
+    emailStatusIcon.innerHTML = '';
+    nameStatusIcon.innerHTML = '';
+    }, 4000);
+}
+
 // Listeners
 // Menu
 openNav.addEventListener('click', menuHandler);
@@ -162,6 +202,7 @@ function formEventRouter(e) {
   }
 }
 
+
 // Listeners on form inputs
 form.addEventListener('click', (e) => {
    formEventRouter(e);
@@ -174,17 +215,10 @@ form.addEventListener('change', (e) => {
 });
 // Listener on button
 form.addEventListener('submit', (e) => {
+    e.preventDefault();
   if (isEmailFormCorrect()) {  // Checks that fields are properly filled out, if so, shows user a success message
-      setTimeout(fadeInOut(successMessage), 100); //fades success message in
-      clearTimeout();
-      setTimeout(function() {
-          fadeInOut(successMessage); // fades success message out
-          form.reset(); // resets form
-          emailDiv.classList.remove('success'); // removes validation styling & icons
-          nameDiv.classList.remove('success');
-          }, 2500);
+      ajaxPOST();
   } else {  // runs field validation functions again
-      e.preventDefault();
       checkName(e, nameDiv, nameInput);
       checkEmail(e, emailDiv, emailInput);
   }

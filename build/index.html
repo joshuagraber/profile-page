@@ -40,7 +40,8 @@
 <!-- About -->
         <div class="about" id="about">
           <h2>About Me</h2>
-          <p>I am a frontend web developer who is passionate about making the web a more beautiful place. I'm a lifelong learner and am continuing to add coding tools to my tool box as I go along. I'm proficient in JavaScript and Node.js, CSS and SCSS, HTML5, and working with advanced layout techniques. Currently, I'm diving into the wonderful world of learning React, and I'll have some projects showcasing that skill shortly. If you'd like to collaborate, <a href="#contact">send me an email</a>, and let's talk!</p>
+          <p>I am a frontend web developer who is passionate about making the web a more beautiful place. I'm a lifelong learner and am continuing to add coding tools to my tool box as I go along. I'm proficient in JavaScript, CSS and SCSS, HTML5, and working with advanced layout techniques. Currently, I'm diving into the wonderful world of learning React, and I'll have some projects showcasing that skill shortly. If you'd like to collaborate, <a href="#contact">send me an email</a>, and let's talk!</p>
+          <p>[If you've found your way here looking for my editorial and writing work, that porfolio <a href="https://www.joshuadgraber.com" target="_blank">can be found here.</a>]</p>
         </div>
 
 <!-- Projects -->
@@ -116,7 +117,7 @@
 <!-- Contact -->
         <div class="contact" id="contact">
           <h5>Get in Touch</h5>
-          <form class="contact-form" action="contact-form.php" method="POST" name="contact-form">
+          <form id="ajax-contact" class="contact-form" action="contact-form.php" method="POST" name="contact-form">
               <div class="form-row name">
                 <label for="name">Your Name: </label>
                 <input type="text" size="19" name="name"><div class="status-icon"></div>
@@ -136,9 +137,7 @@
               <div class="form-row submit">
                 <input class="form-submit" type="submit" value="Send">
               </div>
-              <div class="success-message">
-                <h6>Thank you for getting in touch!</h6>
-                <p>I'll get back to you shortly.</p>
+              <div class="form-status-message">
               </div> 
           </form> 
           
@@ -356,6 +355,8 @@
   </div>
 
   <div class="overlay"></div>
+
+  <script src="javascript/jquery-min.js"></script>
   <script src="javascript/scripts.js"></script>
 </body>
 </html>

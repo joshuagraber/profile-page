@@ -27,6 +27,7 @@ $gutter: 10px;
 
 // Breakpoints
 $breakpoints: (  //Map (similar to objects in JS)
+    'mob': 375px,
     'xs': 550px,
     'sm': 551px,
     'med': 768px,

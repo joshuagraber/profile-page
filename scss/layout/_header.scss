@@ -9,6 +9,9 @@
     @include mq(xs) {
         height: 100vh;
     }
+    @include mq(mob) {
+        height: 130vh;
+    }
 }
 .page-header > * {
     color: $color-shade;

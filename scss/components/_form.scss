@@ -1,0 +1,155 @@
+// ======================================
+//  Form Styles
+// ======================================
+
+
+.contact-form {
+    width: 80%;
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 2rem;
+    border: 2px solid $color-primary;
+    border-radius: 5px;
+    box-shadow: 0 0 5px $color-primary-light;
+    color: $color-primary;
+    font-size: .9rem;
+    font-weight: 800;
+    @include flexy($just: center, $align: center, $wrap: wrap);
+    gap: 20px;
+    position: relative;
+}
+.form-row {
+    @include flexy($align: center);
+    position: relative;
+}
+.form-row.name,
+.form-row.email {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+.form-row.message {
+    flex-basis: 80%;
+}
+.form-row.submit {
+    flex-basis: 80%;
+    @include flexy($just: center, $align: center);
+}
+.msg-container {
+    width: 100%;
+    @include flexy($just: center);
+}
+label {
+    font-size: .9rem;
+    font-weight: 700;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background: none;
+    background: rgba($color-primary-light, $alpha: .1);
+    border: none;
+    border: 2px solid $color-shade;
+    border-radius: 5px;
+    color: $color-text;
+    font-family: $font-stack-secondary;
+    &:active,
+    &:hover,
+    &:-internal-autofill-selected {
+        background-color: rgba($color-primary-light, $alpha: .1);
+        border: inset 2px solid $color-shade;
+    }
+}
+input[type="text"],
+input[type="email"] {
+    height: 30px;
+    padding: .5rem;
+    width: 100%;
+    max-width: 200px;
+    margin-left: .5rem;
+    overflow-x: scroll;
+}
+textarea {
+    display: block;
+    width: 75%;
+    height: 100px;
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: .5rem;
+    padding: .3rem;
+    font-size: .9rem;
+}
+.form-submit {
+    background: none;
+    background: $color-primary-light;
+    width: 85px;
+    height: 40px;
+    border: 2px solid $color-shade;
+    border-radius: 5px;
+    color: $white;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    &:hover {
+        opacity: .8;
+    }
+    &:active {
+        transform: scale(.95);
+    }
+}
+
+// Form Val Styles
+.error-message {
+    display: none;
+    color: rgb(161, 28, 28);
+    grid-column: 2 / 3;
+    justify-self: end;
+}
+.status-icon {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.form-row.error .status-icon {
+    color: rgb(161, 28, 28);
+}
+.form-row.error .error-message {
+    display: inline-block;
+}
+.form-row.error input {
+    border: 2px solid rgb(161, 28, 28);
+}
+.form-row.success .status-icon {
+    color: rgb(2, 97, 2);
+}
+.form-row.success input {
+    border: 2px solid rgb(2, 97, 2);
+}
+
+.form-status-message {
+    display: none;
+    opacity: 0;
+    transition: all .3s ease-in;
+    & h6 {
+        font-size: 1.5rem;
+        align-self: end;
+    }
+    & p {
+        font-size: 1.1rem;
+    }
+}
+.form-status-message.show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color-primary-light, $alpha: .8);
+    color: white;
+    display: grid;
+    grid-template-columns: 1;
+    justify-items: center;
+}
+.form-status-message.fadeIn {
+    opacity: 1;
+}
