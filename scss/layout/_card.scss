@@ -11,7 +11,7 @@
     display: grid;
     border-radius: 5px 5px 0 0;
     align-content: center;
-    justify-content: center;
+    justify-content: center; 
 }
 .card h4 {
     text-decoration: underline solid $color-accent .1rem;
@@ -19,7 +19,7 @@
 }
 .card {
     width: auto;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .card.coffee {
     @include mq(lg) {

@@ -535,7 +535,7 @@ ol {
 
 .card {
   width: auto;
-  border-radius: 5px; }
+  border-radius: 4px; }
 
 @media (min-width: 885px) {
   .card.coffee {
