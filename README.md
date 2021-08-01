@@ -18,7 +18,7 @@
 A single-page portfolio website using HTML, CSS (Written in SCSS, autoprefixed and minified using Gulp), JavaScript (uglified using Gulp), jQuery for Ajax, and PHP for the backend form processing and emailing of the data.
 
 ### Screenshots
-![](/images/screenshots/screenshot.png)
+![](/screenshot.png)
 
 
 
