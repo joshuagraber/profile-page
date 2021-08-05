@@ -688,11 +688,11 @@ footer {
 #mars-rover .mod-hero {
   background-image: url(../images/mars-1.png); }
 
-#pricing-slide .mod-hero {
-  background-image: url(../images/page-slider-1.png); }
+#countries .mod-hero {
+  background-image: url(../images/countries-2.png); }
 
-#four-card .mod-hero {
-  background-image: url(../images/four-card-1.png); }
+#loop .mod-hero {
+  background-image: url(../images/loop-1.png); }
 
 .feature-wrap,
 .tech-used {
@@ -1128,6 +1128,7 @@ textarea {
   right: 0;
   bottom: 0;
   background: rgba(43, 21, 55, 0.8);
+  padding: 1rem;
   color: white;
   display: grid;
   grid-template-columns: 1;
@@ -1138,9 +1139,9 @@ textarea {
 
 .close-mod {
   position: absolute;
-  top: -50px;
-  right: 5px;
-  color: #fff;
+  top: 10px;
+  right: 20px;
+  color: #0e0712;
   font-size: 2rem;
   opacity: .9;
   cursor: pointer; }
@@ -1148,12 +1149,8 @@ textarea {
     .close-mod {
       top: -60px;
       right: -35px;
+      color: #fff;
       font-size: 2.4rem; } }
-  @media (max-width: 375px) {
-    .close-mod {
-      top: 10px;
-      right: 20px;
-      color: #0e0712; } }
 
 img {
   width: 100%;

@@ -41,8 +41,8 @@
 <!-- About -->
         <div class="about" id="about">
           <h2>About Me</h2>
-          <p>I am a frontend web developer who is passionate about making the web a more beautiful place. I'm a lifelong learner and am continuing to add coding tools to my tool box as I go along. I'm proficient in JavaScript, CSS and SCSS, HTML5, and working with advanced layout techniques. Currently, I'm diving into the wonderful world of learning React, and I'll have some projects showcasing that skill shortly. If you'd like to collaborate, <a href="#contact">send me an email</a>, and let's talk!</p>
-          <p>[If you've found your way here looking for my editorial and writing work, that porfolio <a href="https://www.joshuadgraber.com" target="_blank">can be found here.</a>]</p>
+          <p>I am a frontend web developer who is passionate about making the web a more beautiful place. I'm a lifelong learner and am continuing to add coding tools to my tool box as I go along. I'm proficient in React.js, JavaScript, CSS and SCSS, HTML5, and advanced layout techniques. I'm working to advance my skills in all of these areas, as well as jumping on the road to Full Stack by learning Node.js and PHP. If you'd like to collaborate, <a href="#contact">send me an email</a>, and let's talk!</p>
+          <p>[P.S. If you've found your way to this portfolio looking for my editorial and writing work, that porfolio <a href="https://www.joshuadgraber.com" target="_blank">can be found here.</a>]</p>
         </div>
 
 <!-- Projects -->
@@ -52,13 +52,37 @@
             
             <div class="card coffee">
               <header class="card-header">
-                <h4>Multi-page Coffee Shop Site</h4>
+                <h4>Multi-page Coffee Shop E-Commerce Site</h4>
               </header>
               <div class="card-img-wrap">
                 <img src="images/coffee-1.png" alt="Screenshot of main page of my multi-page feature project" class="card-img coffee-small">
                 <img src="images/coffee-1-desk.png" alt="Screenshot of main page of my multi-page feature project" class="card-img coffee-large">
                 <div class="card-img-overlay">
                   <button class="card-img-button" id="coffee">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <header class="card-header">
+                <h4>Countries Rest API Lookup Page with React.js</h4>
+              </header>
+              <div class="card-img-wrap">
+                <img src="images/countries-1.png" alt="Screenshot of REST Countries API page" class="card-img">
+                <div class="card-img-overlay">
+                  <button class="card-img-button" id="countries">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <header class="card-header">
+                <h4>Loop Studios Landing Page with React.js</h4>
+              </header>
+              <div class="card-img-wrap">
+                <img src="images/loop-1.png" alt="Screenshot of Loop Studios landing page" class="card-img">
+                <div class="card-img-overlay">
+                  <button class="card-img-button" id="loop">Read More</button>
                 </div>
               </div>
             </div>
@@ -77,7 +101,7 @@
 
             <div class="card">
               <header class="card-header">
-                <h4>Mars Rover Photo Generator</h4>
+                <h4>NASA Mars Rover API Photo Generator</h4>
               </header>
               <div class="card-img-wrap">
                 <img src="images/mars-1.png" alt="Screenshot of photo Mars Rover photo generator" class="card-img">
@@ -87,29 +111,7 @@
               </div>
             </div>
 
-            <div class="card">
-              <header class="card-header">
-                <h4>Interactive Pricing Component</h4>
-              </header>
-              <div class="card-img-wrap">
-                <img src="images/page-slider-1.png" alt="Screenshot of interactive pricing component" class="card-img">
-                <div class="card-img-overlay">
-                  <button class="card-img-button" id="pricing-slide">Read More</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <header class="card-header">
-                <h4>Four Card Feature Page</h4>
-              </header>
-              <div class="card-img-wrap">
-                <img src="images/four-card-1.png" alt="Screenshot of four-card feature page" class="card-img">
-                <div class="card-img-overlay">
-                  <button class="card-img-button" id="four-card">Read More</button>
-                </div>
-              </div>
-            </div>
+            
 
           
           </div>
@@ -144,9 +146,9 @@
           
         </div>
       </div>
+
+
 <!-- Footer -->
-        
-      
       <footer>
         <div class="footer-links">
           <div>Built by Joshua Graber</div>
@@ -160,202 +162,219 @@
   </div>
 
 
-<!-- Modals -->
+  <!-- Modals -->
+    <!-- Coffee Shop site -->
+    <div class="mod" id="coffee">
+      <div class="close-mod">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="mod-wrap">
+        <h5>Multi-page Coffee Shop E-Commerce Site</h5>
+        <div class="mod-hero">
+        </div>
+        <div class="feature">
+          <div class="feature-wrap">
+            <p>A multi-page coffee shop website featuring two modal windows, two forms with client side validation, and a fully (frontend) functioning e-commerce page.</p>
+            <img class="feature-img" src="images/coffee-2.png" alt="Screenshot of coffee shop e-commerce site">
+          </div>
+        </div>
+        <div class="tech-used">
+          <div class="tech-wrap">
+            <h6>Technologies Used and Skills Demonstrated</h6>
+            <ol class="tech-list">
+              <li>Html 5 markup</li>
+              <li>SCSS, packaged to CSS, run through autoprefixer, and minified using Gulp</li>
+              <li>All behavior coded with vanilla JavaScript.</li>
+              <li>CSS Grid</li>
+              <li>CSS Flexbox</li>
+              <li>Two different modal windows, including the shopping cart and a café menu</li>
+              <li>Mapbox API integration and display.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="mod-gallery">
+          <img src="images/coffee-3.png" alt="screenshot of coffee shop e-commerce modal window showing cart">
+          <img src="images/coffee-4.png" alt="screenshot of coffee shop café page">
+          <img src="images/coffee-5.png" alt="screenshot of coffee shop pricing section on roastery page">
+          <img src="images/coffee-6.png" alt="screenshot of coffee shop mobile menu">
+          <img src="images/coffee-7.png" alt="screenshot of coffee shop modal window showing café daily menu">
+          <img src="images/coffee-8.png" alt="screenshot of coffee shop cart in active form-validation state">
+        </div>
+        <div class="button-wrap">
+          <button class="mod-callout github"><a href="https://github.com/joshuagraber/coffee-shop-multi-page" target="_blank">Project Repository</a></button>
+          <button class="mod-callout live"><a href="https://joshuagraber.github.io/coffee-shop-multi-page/" target="_blank">View Site</a></button>
+        </div>
+      </div>
+    </div>
 
-  <!-- Coffee Shop site -->
-  <div class="mod" id="coffee">
-    <div class="close-mod">
-      <i class="fas fa-times"></i>
-    </div>
-    <div class="mod-wrap">
-      <h5>Multi-page Coffee Shop Site</h5>
-      <div class="mod-hero">
+    <!-- Countries REST API -->
+    <div class="mod" id="countries">
+      <div class="close-mod">
+        <i class="fas fa-times"></i>
       </div>
-      <div class="feature">
-        <div class="feature-wrap">
-          <p>A multi-page coffee shop website featuring two modal windows, two forms with client side validation, and a fully (frontend) functioning e-commerce page.</p>
-          <img class="feature-img" src="images/coffee-2.png" alt="Screenshot of coffee shop e-commerce site">
+      <div class="mod-wrap">
+        <h5>Countries REST API Site with React.js</h5>
+        <div class="mod-hero">
+        </div>
+        <div class="feature">
+          <div class="feature-wrap">
+            <p>A fun Frontend Mentor project incorporating the EU's Countries REST API. There were a lot of fun challenges in this one, including a dark mode toggle. I built this with React, using Router and Hooks.</p>
+            <img class="feature-img" src="images/countries-9.png" alt="Screenshot of countries REST API site">
+          </div>
+        </div>
+        <div class="tech-used">
+          <div class="tech-wrap">
+            <h6>Technologies Used and Skills Demonstrated</h6>
+            <ol class="tech-list">
+              <li>JSX markup</li>
+              <li>React.js, employing Router and Hooks</li>
+              <li>REST API integration and data handling.</li>
+              <li>CSS Grid</li>
+              <li>CSS Flexbox</li>
+              <li>CSS Variables, adjusted via JavaScript on dark mode toggle</li>
+              
+            </ol>
+          </div>
+        </div>
+        <div class="mod-gallery">
+          <img src="images/countries-3.png" alt="screenshot of countries API project showing search funtionality">
+          <img src="images/countries-4.png" alt="screenshot of countries API project showing search funtionality in light mode">
+          <img src="images/countries-5.png" alt="screenshot of countries API project showing sort funtionality">
+          <img src="images/countries-6.png" alt="screenshot of countries API project showing mobile view">
+          <img src="images/countries-7.png" alt="screescreenshot of countries API project showing country detail">
+          <img src="images/countries-8.png" alt="screenshot of countries API project showing country detail in mobile view">
+        </div>
+        <div class="button-wrap">
+          <button class="mod-callout github"><a href="https://github.com/joshuagraber/rest-countries-api" target="_blank">Project Repository</a></button>
+          <button class="mod-callout live"><a href="https://eager-hermann-591f20.netlify.app" target="_blank">View Site</a></button>
         </div>
       </div>
-      <div class="tech-used">
-        <div class="tech-wrap">
-          <h6>Technologies Used and Skills Demonstrated</h6>
-          <ol class="tech-list">
-            <li>Html 5 markup</li>
-            <li>SCSS, packaged to CSS, run through autoprefixer, and minified using Gulp</li>
-            <li>All behavior coded with vanilla JavaScript.</li>
-            <li>CSS Grid</li>
-            <li>CSS Flexbox</li>
-            <li>Two different modal windows, including the shopping cart and a café menu</li>
-            <li>Mapbox API integration and display.</li>
-          </ol>
-        </div>
-      </div>
-      <div class="mod-gallery">
-        <img src="images/coffee-3.png" alt="screenshot of coffee shop e-commerce modal window showing cart">
-        <img src="images/coffee-4.png" alt="screenshot of coffee shop café page">
-        <img src="images/coffee-5.png" alt="screenshot of coffee shop pricing section on roastery page">
-        <img src="images/coffee-6.png" alt="screenshot of coffee shop mobile menu">
-        <img src="images/coffee-7.png" alt="screenshot of coffee shop modal window showing café daily menu">
-        <img src="images/coffee-8.png" alt="screenshot of coffee shop cart in active form-validation state">
-      </div>
-      <div class="button-wrap">
-        <button class="mod-callout github"><a href="https://github.com/joshuagraber/coffee-shop-multi-page" target="_blank">Project Repository</a></button>
-        <button class="mod-callout live"><a href="https://joshuagraber.github.io/coffee-shop-multi-page/" target="_blank">View Site</a></button>
-      </div>
     </div>
-  </div>
 
-  <!-- Sunnyside Agency -->
-  <div class="mod" id="sunnyside">
-    <div class="close-mod">
-      <i class="fas fa-times"></i>
-    </div>
-    <div class="mod-wrap">
-      <h5>Sunnyside Agency Landing Page</h5>
-      <div class="mod-hero">
-      </div>
-      <div class="feature">
-        <div class="feature-wrap">
-          <p>A creative agency landing page featuring responsive layout, CSS flexbox and grid, as well as a mobile menu with a touch of JavaScript.</p>
-          <img class="feature-img" src="images/sunnyside-2.png" alt="Screenshot of Sunnyside agency landing page">
-        </div>
-      </div>
-      <div class="tech-used">
-        <div class="tech-wrap">
-          <h6>Technologies Used and Skills Demonstrated</h6>
-          <ol class="tech-list">
-            <li>Html 5 markup</li>
-            <li>SCSS, packaged to CSS using npm Sass</li>
-            <li>Mobile menu behavior coded with vanilla JavaScript.</li>
-            <li>CSS Grid</li>
-            <li>CSS Flexbox</li>
-          </ol>
-        </div>
-      </div>
-      <div class="mod-gallery">
-        <img src="images/sunnyside-1.png" alt="screenshot of sunnyside agency landing page header">
-        <img src="images/sunnyside-2.png" alt="screenshot of sunnyside agency landing page content area">
-        <img src="images/sunnyside-3.png" alt="screenshot of sunnyside agency landing page testimonials section">
-        <img src="images/sunnyside-4.png" alt="screenshot of sunnyside agency landing page mobile menu">
-      </div>
-      <div class="button-wrap">
-        <button class="mod-callout github"><a href="https://github.com/joshuagraber/fem-agency-landing-page" target="_blank">Project Repository</a></button>
-        <button class="mod-callout live"><a href="https://joshuagraber.github.io/fem-agency-landing-page/" target="_blank">View Site</a></button>
-      </div>
-    </div>
-  </div>
 
-  <!-- Mars Rover Photo Generator -->
-  <div class="mod" id="mars-rover">
-    <div class="close-mod">
-      <i class="fas fa-times"></i>
-    </div>
-    <div class="mod-wrap">
-      <h5>Mars Rover Photo Generator</h5>
-      <div class="mod-hero">
+    <!-- Loop Studios Landing -->
+    <div class="mod" id="loop">
+      <div class="close-mod">
+        <i class="fas fa-times"></i>
       </div>
-      <div class="feature">
-        <div class="feature-wrap">
-          <p>A fun project using NASA's Mars Rover API and vanilla JavaScript to generate random photos from each rover on a random Martian Sol each time a user presses a button.</p>
-          <img class="feature-img" src="images/mars-2.png" alt="Screenshot of Mars rover photo generator">
+      <div class="mod-wrap">
+        <h5>Loop Studios Landing Page with React.js</h5>
+        <div class="mod-hero">
+        </div>
+        <div class="feature">
+          <div class="feature-wrap">
+            <p>My first React.js project, and a fun one, I built this with a relatively simple structure. Given that it's a static site, the React functionality was pretty easy. There were were a few layout challenges, though, like the overlapping elements in the "interactive" section, that made for some tricky CSS work with grid and flex, as well as positioning values.</p>
+            <img class="feature-img" src="images/loop-2.png" alt="Screenshot of Loop studios landing page, creations section">
+          </div>
+        </div>
+        <div class="tech-used">
+          <div class="tech-wrap">
+            <h6>Technologies Used and Skills Demonstrated</h6>
+            <ol class="tech-list">
+              <li>JSX markup</li>
+              <li>React.js</li>
+              <li>CSS Grid</li>
+              <li>CSS Flexbox</li>
+              <li>CSS Variables</li>
+            </ol>
+          </div>
+        </div>
+        <div class="mod-gallery">
+          <img src="images/loop-1.png" alt="Screenshot of Loop studios landing page, header and hero">
+          <img src="images/loop-4.png" alt="Screenshot of Loop studios landing page, creations section">
+          <img src="images/loop-5.png" alt="Screenshot of Loop studios landing page, mobile header and hero">
+          <img src="images/loop-6.png" alt="Screenshot of Loop studios landing page, mobile menu">
+        </div>
+        <div class="button-wrap">
+          <button class="mod-callout github"><a href="https://github.com/joshuagraber/loopstudios-vr" target="_blank">Project Repository</a></button>
+          <button class="mod-callout live"><a href="https://vibrant-shirley-8c90de.netlify.app/" target="_blank">View Site</a></button>
         </div>
       </div>
-      <div class="tech-used">
-        <div class="tech-wrap">
-          <h6>Technologies Used and Skills Demonstrated</h6>
-          <ol class="tech-list">
-            <li>Html 5 markup</li>
-            <li>CSS</li>
-            <li>JavaScript fetch API.</li>
-            <li>working with external APIs</li>
-            <li>CSS Flexbox</li>
-          </ol>
-        </div>
-      </div>
-      <div class="mod-gallery">
-        <img src="images/mars-1.png" alt="Screenshot of Mars rover photo generator">
-        <img src="images/mars-2.png" alt="Screenshot of Mars rover photo generator">
-        <img src="images/mars-3.png" alt="Screenshot of Mars rover photo generator">
-        <img src="images/mars-4.png" alt="Screenshot of Mars rover photo generator">
-      </div>
-      <div class="button-wrap">
-        <button class="mod-callout github"><a href="https://github.com/joshuagraber/red-rover" target="_blank">Project Repository</a></button>
-        <button class="mod-callout live"><a href="https://joshuagraber.github.io/red-rover/" target="_blank">View Site</a></button>
-      </div>
     </div>
-  </div>
 
-  <!-- Sliding Pricing Component -->
-  <div class="mod" id="pricing-slide">
-    <div class="close-mod">
-      <i class="fas fa-times"></i>
-    </div>
-    <div class="mod-wrap">
-      <h5>Interactive Pricing Component</h5>
-      <div class="mod-hero">
+    <!-- Sunnyside Agency -->
+    <div class="mod" id="sunnyside">
+      <div class="close-mod">
+        <i class="fas fa-times"></i>
       </div>
-      <div class="feature">
-        <div class="feature-wrap">
-          <p>An interesting pricing component that was my first real JavaScript challenge that I completed on my own.</p>
-          <img class="feature-img" src="images/page-slider-2.png" alt="Screenshot of interactive pricing component">
+      <div class="mod-wrap">
+        <h5>Sunnyside Agency Landing Page</h5>
+        <div class="mod-hero">
+        </div>
+        <div class="feature">
+          <div class="feature-wrap">
+            <p>A creative agency landing page featuring responsive layout, CSS flexbox and grid, as well as a mobile menu with a touch of JavaScript.</p>
+            <img class="feature-img" src="images/sunnyside-2.png" alt="Screenshot of Sunnyside agency landing page">
+          </div>
+        </div>
+        <div class="tech-used">
+          <div class="tech-wrap">
+            <h6>Technologies Used and Skills Demonstrated</h6>
+            <ol class="tech-list">
+              <li>Html 5 markup</li>
+              <li>SCSS, packaged to CSS using npm Sass</li>
+              <li>Mobile menu behavior coded with vanilla JavaScript.</li>
+              <li>CSS Grid</li>
+              <li>CSS Flexbox</li>
+            </ol>
+          </div>
+        </div>
+        <div class="mod-gallery">
+          <img src="images/sunnyside-1.png" alt="screenshot of sunnyside agency landing page header">
+          <img src="images/sunnyside-2.png" alt="screenshot of sunnyside agency landing page content area">
+          <img src="images/sunnyside-3.png" alt="screenshot of sunnyside agency landing page testimonials section">
+          <img src="images/sunnyside-4.png" alt="screenshot of sunnyside agency landing page mobile menu">
+        </div>
+        <div class="button-wrap">
+          <button class="mod-callout github"><a href="https://github.com/joshuagraber/fem-agency-landing-page" target="_blank">Project Repository</a></button>
+          <button class="mod-callout live"><a href="https://joshuagraber.github.io/fem-agency-landing-page/" target="_blank">View Site</a></button>
         </div>
       </div>
-      <div class="tech-used">
-        <div class="tech-wrap">
-          <h6>Technologies Used and Skills Demonstrated</h6>
-          <ol class="tech-list">
-            <li>Html 5 markup</li>
-            <li>CSS</li>
-            <li>Functional JavaScript programming.</li>
-            <li>CSS Flexbox</li>
-          </ol>
-        </div>
-      </div>
-      <div class="mod-gallery">
-        <img src="images/page-slider-1.png" alt="Screenshot of interactive pricing component">
-        <img src="images/page-slider-4.png" alt="Screenshot of interactive pricing component">
-      </div>
-      <div class="button-wrap">
-        <button class="mod-callout github"><a href="https://github.com/joshuagraber/fem-interactive-pricing-component" target="_blank">Project Repository</a></button>
-        <button class="mod-callout live"><a href="https://joshuagraber.github.io/fem-interactive-pricing-component/" target="_blank">View Site</a></button>
-      </div>
     </div>
-  </div>
 
-  <!-- Four Card Feature Site -->
-  <div class="mod" id="four-card">
-    <div class="close-mod">
-      <i class="fas fa-times"></i>
-    </div>
-    <div class="mod-wrap">
-      <h5>Four Card Feature Page</h5>
-      <div class="mod-hero">
+    <!-- Mars Rover Photo Generator -->
+    <div class="mod" id="mars-rover">
+      <div class="close-mod">
+        <i class="fas fa-times"></i>
       </div>
-      <div class="feature">
-        <div class="feature-wrap">
-          <p>A features page laid out with CSS Grid.</p>
-          <img class="feature-img" src="images/four-card-2.png" alt="Screenshot of four-card feature page">
+      <div class="mod-wrap">
+        <h5>NASA Mars Rover API Photo Generator</h5>
+        <div class="mod-hero">
+        </div>
+        <div class="feature">
+          <div class="feature-wrap">
+            <p>A fun project using NASA's Mars Rover API and vanilla JavaScript to generate random photos from each rover on a random Martian Sol each time a user presses a button.</p>
+            <img class="feature-img" src="images/mars-2.png" alt="Screenshot of Mars rover photo generator">
+          </div>
+        </div>
+        <div class="tech-used">
+          <div class="tech-wrap">
+            <h6>Technologies Used and Skills Demonstrated</h6>
+            <ol class="tech-list">
+              <li>Html 5 markup</li>
+              <li>CSS</li>
+              <li>JavaScript fetch API.</li>
+              <li>working with external APIs</li>
+              <li>CSS Flexbox</li>
+            </ol>
+          </div>
+        </div>
+        <div class="mod-gallery">
+          <img src="images/mars-1.png" alt="Screenshot of Mars rover photo generator">
+          <img src="images/mars-2.png" alt="Screenshot of Mars rover photo generator">
+          <img src="images/mars-3.png" alt="Screenshot of Mars rover photo generator">
+          <img src="images/mars-4.png" alt="Screenshot of Mars rover photo generator">
+        </div>
+        <div class="button-wrap">
+          <button class="mod-callout github"><a href="https://github.com/joshuagraber/red-rover" target="_blank">Project Repository</a></button>
+          <button class="mod-callout live"><a href="https://joshuagraber.github.io/red-rover/" target="_blank">View Site</a></button>
         </div>
       </div>
-      <div class="tech-used">
-        <div class="tech-wrap">
-          <h6>Technologies Used and Skills Demonstrated</h6>
-          <ol class="tech-list">
-            <li>Html 5 markup</li>
-            <li>CSS</li>
-            <li>CSS Grid</li>
-          </ol>
-        </div>
-      </div>
-      <div class="button-wrap">
-        <button class="mod-callout github"><a href="https://github.com/joshuagraber/fem-four-card-feature-section-master" target="_blank">Project Repository</a></button>
-        <button class="mod-callout live"><a href="https://joshuagraber.github.io/fem-four-card-feature-section-master/" target="_blank">View Site</a></button>
-      </div>
     </div>
-  </div>
 
-  <div class="overlay"></div>
+    <!-- Modal Overlay -->
+    <div class="overlay"></div>
+
 
   <script src="javascript/jquery-min.js"></script>
   <script src="javascript/scripts.js"></script>
