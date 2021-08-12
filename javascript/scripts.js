@@ -152,7 +152,6 @@ function ajaxPOST() {
     data: formData
   })
   .done((response) => {
-    console.log(response);
     statusMessage.innerHTML = response;
     displayFormStatus();
   })
