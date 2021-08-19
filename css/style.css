@@ -473,6 +473,7 @@ ol {
   text-align: center; }
 
 .page-header {
+  padding-top: 20px;
   height: 600px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #0e0712), color-stop(60%, #2b1537), color-stop(#47245b), color-stop(#643280), color-stop(#d8d2dd), to(#f1eff3));
   background: -webkit-linear-gradient(top, #0e0712 35%, #2b1537 60%, #47245b, #643280, #d8d2dd, #f1eff3);
@@ -767,7 +768,7 @@ footer {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.6); }
+  background: rgba(0, 0, 0, 0.8); }
 
 .nav-container {
   width: 100%;

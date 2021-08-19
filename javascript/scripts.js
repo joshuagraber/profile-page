@@ -1,5 +1,6 @@
 //Variables
 const body = document.querySelector('body');
+
 //Nav
 const openNav = document.querySelector('.open-nav');
 const nav = document.querySelector('.main-nav');
@@ -10,6 +11,7 @@ const cardButtons = document.querySelectorAll('.card-img-button');
 const modals = document.querySelectorAll('.mod');
 const modalCloseButtons = document.querySelectorAll('.close-mod');
 const overlay = document.querySelector('.overlay');
+const modalCallouts = document.querySelectorAll('.mod-callout');
 
 // Form validation
 const form = document.querySelector('form');
@@ -156,7 +158,7 @@ function ajaxPOST() {
     displayFormStatus();
   })
   .fail((data) => {
-    console.log(data);
+    console.error(data);
     if (data.responseText !== '') {
       statusMessage.innerHTML = `${data.responseText}`;
     } else {
@@ -190,6 +192,12 @@ cardButtons.forEach(button => button.addEventListener('click', (e) => {
   openModal(e);
 }));
 modalCloseButtons.forEach(button => button.addEventListener('click', closeModal));
+modalCallouts.forEach(button => button.addEventListener('click', closeModal));
+overlay.addEventListener('click', (e) => {
+  e.stopPropagation();
+  closeModal();
+})
+
 
 //Form validation listeners
 //router function for listeners
