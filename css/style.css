@@ -683,6 +683,10 @@ footer {
 #coffee .mod-hero {
   background-image: url(../images/coffee-1-desk.png); }
 
+#tetris .mod-hero {
+  background-image: url(../images/tetris.png);
+  background-color: transparent; }
+
 #countries .mod-hero {
   background-image: url(../images/countries-2.png); }
 
@@ -727,11 +731,18 @@ footer {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .mod-gallery img {
+  .mod-gallery img, .mod-gallery video {
     border-radius: 5px; }
   @media (max-width: 375px) {
     .mod-gallery {
       padding-bottom: 9rem; } }
+
+#tetris-gal {
+  display: block;
+  width: 100%; }
+  #tetris-gal video {
+    display: block;
+    margin: 0 auto; }
 
 .button-wrap {
   position: absolute;

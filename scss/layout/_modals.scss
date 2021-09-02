@@ -53,6 +53,10 @@
 #coffee .mod-hero {
     background-image: url(../images/coffee-1-desk.png);
 }
+#tetris .mod-hero {
+    background-image: url(../images/tetris.png);
+    background-color: transparent;
+}
 #countries .mod-hero {
     background-image: url(../images/countries-2.png);
 }
@@ -98,11 +102,20 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
     gap: 10px;
     justify-content: center;
-    & img {
+    & img, video {
         border-radius: 5px;
     }
     @include mq(mob) {
         padding-bottom: 9rem;
+    }
+}
+
+#tetris-gal {
+    display: block;
+    width: 100%;
+    & video {
+        display: block;
+        margin: 0 auto;
     }
 }
 
